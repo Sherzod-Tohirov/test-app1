@@ -8,9 +8,6 @@
     
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-    
-}
 
 @media only screen {
     .hero {
@@ -29,5 +26,40 @@
         @include mx.remove-margin; 
         @include mx.typography(inherit, 400, 50px, 120%, start, var(--main-txt-color));
         text-transform: uppercase;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .hero__title {
+        font-size: 32px;
+    }
+
+    .hero__title-wrapper {
+        max-width: 750px;
+    }
+
+    .hero__title {
+        font-size: 38px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .hero {
+        padding-top: 80px;
+    }
+
+    .hero__wrapper {
+        @include mx.flexbox(row, center, center);
+    }
+    .hero__title-wrapper {
+        @include mx.flexbox(row, center, center);
+        max-width: 80%;
+        width: 100%;
+    }
+    .hero__title {
+        font-size: 32px;
+        line-height: 150%;
+        text-align: center;
     }
 }

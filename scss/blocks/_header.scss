@@ -1,17 +1,5 @@
 @use "../mixins" as mx;
 
-@media only screen and (max-width: 375px) {
-
-}
-
-@media only screen and (min-width: 375px) and (max-width: 768px) {
-    
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-    
-}
-
 @media only screen {
     .site-header {
         padding-top: 15px;
@@ -73,4 +61,89 @@
         background-color: rgba(158, 11, 55, 0.70);
         box-shadow: 4px 4px 6px 0px rgba(255, 255, 255, 0.50) inset, 4px 4px 20px 0px rgba(223, 80, 23, 0.80);
     }
+
+    .site-header__bar-btn {
+        display: none;
+    }
+
+    .hidden-link {
+        display: none;
+    }
+
+    .site-header__close-btn {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .site-header__nav {
+        position: absolute;
+        right: -100vw;
+        bottom: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 1;
+    }
+
+    .site-header__list {
+        margin-top: 80px;
+        @include mx.flexbox(column, center, center);
+        gap: 35px;
+    }
+
+    .site-header__link {
+        font-size: 22px;
+    }
+
+    .site-header__btn-group {
+        position: absolute;
+        bottom: 25%;
+        right: -100vw;
+        width: 100vw;
+        flex-direction: column;
+        align-items:center;
+        z-index: 5;
+    }
+
+    .site-header__bar-btn, 
+    .site-header__close-btn {
+        border: none;
+        background-color: transparent;
+        @include mx.flexbox(row, center, center);
+        width: 40px;
+        height: 40px;
+        background: url("../../images/svg/bar.svg") no-repeat center;
+        background-size: 40px;
+        transition: transform 0.2s ease;
+        cursor: pointer;
+        &:active {
+            transform: scale(0.95);
+        }
+        
+    }
+
+    .site-header__close-btn {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        background: url("../../images/svg/close.svg") no-repeat center;
+        background-size: 35px;
+        opacity: 0.8;
+    }
+
+    .hidden-item {
+        display: none;
+    }
+
+    .hidden-link {
+        display: inline-flex;
+    }
+    
+}
+
+@media only screen and (max-width: 375px) {
+
 }

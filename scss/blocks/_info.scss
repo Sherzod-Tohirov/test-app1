@@ -8,10 +8,6 @@
     
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-    
-}
-
 @media only screen {
     .info {
         padding-top: 100px;
@@ -265,6 +261,78 @@
         @include mx.remove-margin;
         @include mx.remove-margin;
         @include mx.typography(inherit, 400, 22px, 140%, start, var(--main-txt-color));
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .rs {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .rs__list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .ls__item-text {
+        font-size: 20px;
+    }
+
+    .ls__inner-list-text {
+        padding-right: 10%;
+    }
+
+    .group-img1 {
+        margin-top: 35px;
+        width: 90vw;
+    }
+
+    .group-img2 {
+        width: 90vw;
+    }
+
+
+
+    .info__wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .ls__item-group {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .ls__inner-list {
+        justify-content: center;
+    }
+
+    .ls__inner-list-text {
+        text-align: center;
+    }
+}
+
+
+@media only screen and (max-width: 450px) {
+    .ls__article-text {
+        font-size: 18px;
+    }
+
+    .info__outer-text {
+        font-size: 18px;
+    }  
+    
+    .ls__item-text {
+        font-size: 16px;
     }
 
 }

@@ -1,274 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test</title>
     <link rel="stylesheet" href="./css/main.css">
     <script defer src="./js/app.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <section class="primary">
-        <header class="site-header">
-            <div class="container">
-                <div class="site-header__wrapper">
-                    <nav class="site-header__nav">
-                        <ul class="site-header__list">
-                            <li class="site-header__item">
-                                <a class="site-header__link active" href="#">
-                                    Направления
-                                </a>
-                            </li>
-                            <li class="site-header__item">
-                                <a class="site-header__link" href="#">
-                                    Портфолио
-                                </a>
-                            </li>
-                            <li class="site-header__item">
-                                <a class="site-header__link" href="#">
-                                    Контакты
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="site-header__btn-group">
-                        <button class="site-header__btn sign-in-btn">
-                            Войти
-                        </button>
-                        <button class="site-header__btn sign-up-btn">
-                            Регистрация
-                        </button>
-                    </div>
-                </div>
-            </div> 
-        </header>
-        <main class="primary__main">    
-            <section class="hero">
-                <div class="container">
-                    <div class="hero__wrapper">
-                       <div class="hero__title-wrapper">
-                            <h1 class="hero__title" title="почему мы не используем coreldraw">
-                                почему мы не используем coreldraw
-                            </h1>
-                       </div>
-                    </div>
-                </div>
-            </section>
-        </main> 
+      <h1 class="visually-hidden" title="This is hidden heading">Primary section</h1>
+      <header class="site-header">
+        <div class="container">
+          <div class="site-header__wrapper">
+            <a class="site-header__link hidden-link active" href="#"> Направления </a>
+            <nav class="site-header__nav">
+              <ul class="site-header__list">
+                <li class="site-header__item">
+                  <a class="site-header__link active" href="#"> Направления </a>
+                </li>
+                <li class="site-header__item">
+                  <a class="site-header__link" href="#"> Портфолио </a>
+                </li>
+                <li class="site-header__item">
+                  <a class="site-header__link" href="#"> Контакты </a>
+                </li>
+              </ul>
+              <button class="site-header__close-btn js-close-btn"></button>
+            </nav>
+            <div class="site-header__btn-group">
+              <button class="site-header__btn sign-in-btn"> Войти </button>
+              <button class="site-header__btn sign-up-btn"> Регистрация </button>
+            </div>
+            <button class="site-header__bar-btn js-bar-btn"></button>
+           
+          </div>
+        </div>
+      </header>
+      <div class="primary__main">
+        <section class="hero">
+          <div class="container">
+            <div class="hero__wrapper">
+              <div class="hero__title-wrapper">
+                <h2 class="hero__title" title="почему мы не используем coreldraw"> почему мы не используем coreldraw </h2>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </section>
     <main class="site-main">
-        <section class="info">
-            <div class="container">
-                <div class="info__wrapper">
-                    <!-- ls -> left side -->
-                    <div class="info__ls-wrapper ls">
-                        <div class="ls__article">
-                            <p class="ls__article-text" title="В мире дизайна мы сделали выбор в пользу Adobe, 
+      <section class="info">
+        <h2 class="visually-hidden">Info section</h2>
+        <div class="container">
+          <div class="info__wrapper">
+            <!-- ls -> left side -->
+            <div class="info__ls-wrapper ls">
+              <div class="ls__article">
+                <p class="ls__article-text" title="В мире дизайна мы сделали выбор в пользу Adobe, 
                             оставив за бортом формат CorelDraw. Давайте разберем, 
-                            почему именно Adobe стал нашим надежным союзником в творчестве.">
-                                В мире дизайна мы сделали выбор в пользу Adobe, 
-                                оставив за бортом формат CorelDraw. Давайте разберем, 
-                                почему именно Adobe стал нашим надежным союзником в творчестве.
-                            </p>
-                        </div>
-                        <ul class="ls__list">
-                            <li class="ls__item item1">
-                                <div class="ls__item-group">
-                                    <div class="ls__item-group-inner">
-                                        <p class="ls__item-text text1" title="Adobe - это компания, представляющая широкий спектр продуктов, 
+                            почему именно Adobe стал нашим надежным союзником в творчестве."> В мире дизайна мы сделали выбор в пользу Adobe, оставив за бортом формат CorelDraw. Давайте разберем, почему именно Adobe стал нашим надежным союзником в творчестве. </p>
+              </div>
+              <ul class="ls__list">
+                <li class="ls__item item1">
+                  <div class="ls__item-group">
+                    <div class="ls__item-group-inner">
+                      <p class="ls__item-text text1" title="Adobe - это компания, представляющая широкий спектр продуктов, 
                                             среди которых вы, вероятно, 
-                                            знакомы с основными: ">
-                                            Adobe - это компания, представляющая широкий спектр продуктов, 
-                                            среди которых вы, вероятно, 
-                                            знакомы с основными: 
-                                        </p>
-                                        <div class="ls__inner-list-wrapper">
-                                            <ul class="ls__inner-list">
-                                                <li class="ls__inner-item">
-                                                    <img class="ls__inner-img" src="./images/png/ai.png" width="122" height="40" alt="Adope Illustrator" />
-                                                </li>
-                                                <li class="ls__inner-item">
-                                                    <img class="ls__inner-img" src="./images/svg/pdf.svg" width="54" height="55" alt="PDF" />
-                                                </li>
-                                                <li class="ls__inner-item">
-                                                    <img class="ls__inner-img" src="./images/png/ap.png" width="160" height="39" alt="Adope Premiere" />
-                                                </li>
-                                                <li class="ls__inner-item">
-                                                    <img class="ls__inner-img" src="./images/png/aph.png" width="135" height="40" alt="Adope Photoshop" />
-                                                </li>
-                                                <li class="ls__inner-item">
-                                                    <img class="ls__inner-img" src="./images/png/ain.png" width="135" height="39" alt="Adope Indesign" />
-                                                </li>
-                                                <li class="ls__inner-item">
-                                                    <img class="ls__inner-img" src="./images/png/aae.png" width="147" height="39" alt="Adope After Effects" />
-                                                </li>
-                                            </ul>
-                                            <p class="ls__inner-list-text" title="а также более 90 других продуктов">
-                                                а также более 90 других продуктов
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="ls__item-text text2" title="Более тысячи специалистов по всему миру активно участвуют 
+                                            знакомы с основными: "> Adobe - это компания, представляющая широкий спектр продуктов, среди которых вы, вероятно, знакомы с основными:  </p>
+                      <div class="ls__inner-list-wrapper">
+                        <ul class="ls__inner-list">
+                          <li class="ls__inner-item">
+                            <img class="ls__inner-img" src="./images/png/ai.png" width="122" height="40" alt="Adope Illustrator">
+                          </li>
+                          <li class="ls__inner-item">
+                            <img class="ls__inner-img" src="./images/svg/pdf.svg" width="54" height="55" alt="PDF">
+                          </li>
+                          <li class="ls__inner-item">
+                            <img class="ls__inner-img" src="./images/png/ap.png" width="160" height="39" alt="Adope Premiere">
+                          </li>
+                          <li class="ls__inner-item">
+                            <img class="ls__inner-img" src="./images/png/aph.png" width="135" height="40" alt="Adope Photoshop">
+                          </li>
+                          <li class="ls__inner-item">
+                            <img class="ls__inner-img" src="./images/png/ain.png" width="135" height="39" alt="Adope Indesign">
+                          </li>
+                          <li class="ls__inner-item">
+                            <img class="ls__inner-img" src="./images/png/aae.png" width="147" height="39" alt="Adope After Effects">
+                          </li>
+                        </ul>
+                        <p class="ls__inner-list-text" title="а также более 90 других продуктов"> а также более 90 других продуктов </p>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="ls__item-text text2" title="Более тысячи специалистов по всему миру активно участвуют 
                                     в разработке и обеспечивают высокое качество продуктов и их 
-                                    разнообразные возможности.">
-                                        Более тысячи специалистов по всему миру активно участвуют 
-                                        в разработке и обеспечивают высокое качество продуктов и их 
-                                        разнообразные возможности.
-                                </p>
-                                <p class="ls__item-text text3" title="В то время как CorelDraw ограничивается только CorelDraw.">
-                                    В то время как CorelDraw ограничивается только CorelDraw.
-                                </p>
-                            </li>
-                            <li class="ls__item item2">
-                                <div class="ls__item-group group2">
-                                    <p class="ls__item-text" title="Поддержка CorelDraw практически отсутствует в Европе и США, 
+                                    разнообразные возможности."> Более тысячи специалистов по всему миру активно участвуют в разработке и обеспечивают высокое качество продуктов и их разнообразные возможности. </p>
+                  <p class="ls__item-text text3" title="В то время как CorelDraw ограничивается только CorelDraw."> В то время как CorelDraw ограничивается только CorelDraw. </p>
+                </li>
+                <li class="ls__item item2">
+                  <div class="ls__item-group group2">
+                    <p class="ls__item-text" title="Поддержка CorelDraw практически отсутствует в Европе и США, 
                                         поскольку более 98% типографий в этих регионах не используют 
-                                        данный формат.">
-                                        Поддержка CorelDraw практически отсутствует в Европе и США, 
-                                        поскольку более 98% типографий в этих регионах не используют 
-                                        данный формат.
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="ls__item item3">
-                                <div class="ls__item-group group3">
-                                    <p class="ls__item-text" title="Главный недостаток CorelDraw заключается в преобразовании 
+                                        данный формат."> Поддержка CorelDraw практически отсутствует в Европе и США, поскольку более 98% типографий в этих регионах не используют данный формат. </p>
+                  </div>
+                </li>
+                <li class="ls__item item3">
+                  <div class="ls__item-group group3">
+                    <p class="ls__item-text" title="Главный недостаток CorelDraw заключается в преобразовании 
                                     документа во внутренний формат bitmap. Это особенно заметно 
                                     при обработке растровых изображений, где могут возникнуть 
                                     различные артефакты, такие как неожиданные грани, изменение 
-                                    цветов или полная инверсия изображения.">
-                                        Главный недостаток CorelDraw заключается в преобразовании 
-                                        документа во внутренний формат bitmap. Это особенно заметно 
-                                        при обработке растровых изображений, где могут возникнуть 
-                                        различные артефакты, такие как неожиданные грани, изменение 
-                                        цветов или полная инверсия изображения.
-                                    </p>
-                                </div>
-                                <img class="ls__item-img group-img1" src="./images/png/articlegroup1.png" alt="group images No 1" />
-                                <p class="ls__item-text text4" title=" В отличие от этого, Illustrator лишен подобных неожиданностей и 
+                                    цветов или полная инверсия изображения."> Главный недостаток CorelDraw заключается в преобразовании документа во внутренний формат bitmap. Это особенно заметно при обработке растровых изображений, где могут возникнуть различные артефакты, такие как неожиданные грани, изменение цветов или полная инверсия изображения. </p>
+                  </div>
+                  <img class="ls__item-img group-img1" src="./images/png/articlegroup1.png" alt="group images No 1">
+                  <p class="ls__item-text text4" title=" В отличие от этого, Illustrator лишен подобных неожиданностей и 
                                 обладает полной совместимостью с форматами PDF и EPS, необходимыми для полиграфии. Важно отметить, 
                                 что, несмотря на возможность сохранения файлов в формате PDF, CorelDraw плохо распознает 
                                 PDF файлы, что может привести к потере некоторых элементов макета. Поэтому при подготовке
-                                 макета для офсетной полиграфии Illustrator остается оптимальным выбором.">
-                                    В отличие от этого, Illustrator лишен подобных неожиданностей и обладает полной 
-                                    совместимостью с форматами PDF и EPS, необходимыми для полиграфии. Важно отметить, 
-                                    что, несмотря на возможность сохранения файлов в формате PDF, CorelDraw плохо распознает 
-                                    PDF файлы, что может привести к потере некоторых элементов макета. Поэтому при подготовке
-                                     макета для офсетной полиграфии Illustrator остается оптимальным выбором.
-                                </p>
-                                <img class="ls__item-img group-img2" src="./images/png/articlegroup2.png" alt="group images No 1" />
-                            </li>
-                            <li class="ls__item item4">
-                                <div class="ls__item-group group4">
-                                    <p class="ls__item-text text5" title="Современная лицензия CorelDraw может оцениваться в 
+                                 макета для офсетной полиграфии Illustrator остается оптимальным выбором."> В отличие от этого, Illustrator лишен подобных неожиданностей и обладает полной совместимостью с форматами PDF и EPS, необходимыми для полиграфии. Важно отметить, что, несмотря на возможность сохранения файлов в формате PDF, CorelDraw плохо распознает PDF файлы, что может привести к потере некоторых элементов макета. Поэтому при подготовке макета для офсетной полиграфии Illustrator остается оптимальным выбором. </p>
+                  <img class="ls__item-img group-img2" src="./images/png/articlegroup2.png" alt="group images No 1">
+                </li>
+                <li class="ls__item item4">
+                  <div class="ls__item-group group4">
+                    <p class="ls__item-text text5" title="Современная лицензия CorelDraw может оцениваться в 
                                     600 долларов в год на одного пользователя, что может 
                                     быть финансово недоступным для многих типографий. Из-за 
                                     этого они вынуждены использовать устаревшие версии программы,
-                                     что может привести к искаженному отображению контента.">
-                                        Современная лицензия CorelDraw может оцениваться в 
-                                        600 долларов в год на одного пользователя, что может 
-                                        быть финансово недоступным для многих типографий. Из-за 
-                                        этого они вынуждены использовать устаревшие версии программы,
-                                         что может привести к искаженному отображению контента.
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="ls__item item5">
-                                <div class="ls__item-group group5">
-                                    <p class="ls__item-text text6" title="Обучение наших дизайнеров работе в CorelDraw требовало бы значительного 
+                                     что может привести к искаженному отображению контента."> Современная лицензия CorelDraw может оцениваться в 600 долларов в год на одного пользователя, что может быть финансово недоступным для многих типографий. Из-за этого они вынуждены использовать устаревшие версии программы, что может привести к искаженному отображению контента. </p>
+                  </div>
+                </li>
+                <li class="ls__item item5">
+                  <div class="ls__item-group group5">
+                    <p class="ls__item-text text6" title="Обучение наших дизайнеров работе в CorelDraw требовало бы значительного 
                                     времени. Учитывая, что это формат с тенденцией к упадку, вкладывание 
-                                    человеческого капитала в него становится неоправданно.">
-                                     Обучение наших дизайнеров работе в CorelDraw требовало бы значительного 
-                                     времени. Учитывая, что это формат с тенденцией к упадку, вкладывание 
-                                     человеческого капитала в него становится неоправданно.
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- rs -> right side  -->
-                    <div class="info__rs-wrapper rs">
-                        <ul class="rs__list">
-                            <li class="rs__item">
-                                <div class="rs__overlay">
-                                    <a href="#" class="rs__link">
-                                        почему мы не используем
-                                        <span class="rs__link-stage">
-                                            CorelDraw
-                                        </span>
-                                    </a>
-                                </div>
-                            </li>
-                            <li class="rs__item">
-                                <div class="rs__overlay">
-                                    <a href="#" class="rs__link">
-                                        в команде Creat работают
-                                        <span class="rs__link-stage">
-                                            только лучшие
-                                        </span>
-                                    </a>
-                                </div>
-                            </li>
-                            <li class="rs__item">
-                                <div class="rs__overlay">
-                                    <a href="#" class="rs__link">
-                                        откуда мы черпаем идеи
-                                        <span class="rs__link-stage">
-                                            для дизайна
-                                        </span>
-                                    </a>
-                                </div>
-                            </li>
-                            <li class="rs__item">
-                                <div class="rs__overlay">
-                                    <a href="#" class="rs__link">
-                                        в команде Creat работают
-                                        <span class="rs__link-stage">
-                                            только лучшие
-                                        </span>
-                                    </a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="info__outer-text-wrapper">
-                    <p class="info__outer-text text7" title="​​Используя среду Adobe, мы вкладываемся в инновации, 
+                                    человеческого капитала в него становится неоправданно."> Обучение наших дизайнеров работе в CorelDraw требовало бы значительного времени. Учитывая, что это формат с тенденцией к упадку, вкладывание человеческого капитала в него становится неоправданно. </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- rs -> right side  -->
+            <div class="info__rs-wrapper rs">
+              <ul class="rs__list">
+                <li class="rs__item">
+                  <div class="rs__overlay">
+                    <a href="#" class="rs__link"> почему мы не используем <span class="rs__link-stage"> CorelDraw </span>
+                    </a>
+                  </div>
+                </li>
+                <li class="rs__item">
+                  <div class="rs__overlay">
+                    <a href="#" class="rs__link"> в команде Creat работают <span class="rs__link-stage"> только лучшие </span>
+                    </a>
+                  </div>
+                </li>
+                <li class="rs__item">
+                  <div class="rs__overlay">
+                    <a href="#" class="rs__link"> откуда мы черпаем идеи <span class="rs__link-stage"> для дизайна </span>
+                    </a>
+                  </div>
+                </li>
+                <li class="rs__item">
+                  <div class="rs__overlay">
+                    <a href="#" class="rs__link"> в команде Creat работают <span class="rs__link-stage"> только лучшие </span>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="info__outer-text-wrapper">
+            <p class="info__outer-text text7" title="​​Используя среду Adobe, мы вкладываемся в инновации, 
                     качество и признание в мировом масштабе. Присоединяйтесь 
                     к нам в этом увлекательном путешествии в мир творчества, 
-                    где каждый проект становится настоящим произведением искусства.">
-                        ​​Используя среду Adobe, мы вкладываемся в инновации, 
-                        качество и признание в мировом масштабе. Присоединяйтесь 
-                        к нам в этом увлекательном путешествии в мир творчества, 
-                        где каждый проект становится настоящим произведением искусства.
-                    </p>
-                </div>
+                    где каждый проект становится настоящим произведением искусства."> ​​Используя среду Adobe, мы вкладываемся в инновации, качество и признание в мировом масштабе. Присоединяйтесь к нам в этом увлекательном путешествии в мир творчества, где каждый проект становится настоящим произведением искусства. </p>
+          </div>
+        </div>
+      </section>
+      <section class="slideshow sw">
+        <!-- sw -> slideshow  -->
+        <h2 class="visually-hidden">Slideshow section</h2>
+        <div class="slideshow__wrapper">
+          <div class="sw__top js-sw-top">
+            <div class="sw__top-wrapper js-slider js-slider-one">
+              <img class="sw__top-img" src="./images/png/sw11.png" width="403" height="280" alt="slider image">
+              <img class="sw__top-img" src="./images/png/sw12.png" width="403" height="280" alt="slider image">
+              <img class="sw__top-img" src="./images/png/sw13.png" width="403" height="280" alt="slider image">
+              <img class="sw__top-img" src="./images/png/sw14.png" width="403" height="280" alt="slider image">
+              <img class="sw__top-img" src="./images/png/sw15.png" width="403" height="280" alt="slider image">
             </div>
-        </section>
-        <section class="slideshow sw">
-            <!-- sw -> slideshow  -->
-            <div class="slideshow__wrapper">
-                <div class="sw__top js-sw-top">
-                    <div class="sw__top-wrapper js-slider js-slider-one">
-                        <img class="sw__top-img" src="./images/png/sw11.png" width="403" height="280" alt="slider image" />
-                        <img class="sw__top-img" src="./images/png/sw12.png" width="403" height="280" alt="slider image" />
-                        <img class="sw__top-img" src="./images/png/sw13.png" width="403" height="280" alt="slider image" />
-                        <img class="sw__top-img" src="./images/png/sw14.png" width="403" height="280" alt="slider image" />
-                        <img class="sw__top-img" src="./images/png/sw15.png" width="403" height="280" alt="slider image" />
-                    </div>
-                </div>
-                <div class="sw__bottom js-sw-bottom">
-                    <div class="sw__bottom-wrapper js-slider js-slider-two">
-                        <img class="sw__bottom-img" src="./images/png/sw21.png" width="403" height="280" alt="slider image" />
-                        <img class="sw__bottom-img" src="./images/png/sw22.png" width="403" height="280" alt="slider image" />
-                        <img class="sw__bottom-img" src="./images/png/sw23.png" width="403" height="280" alt="slider image" />
-                        <img class="sw__bottom-img" src="./images/png/sw24.png" width="403" height="280" alt="slider image" />
-                        <img class="sw__bottom-img" src="./images/png/sw25.png" width="403" height="280" alt="slider image" />
-                    </div>
-                </div>
+          </div>
+          <div class="sw__bottom js-sw-bottom">
+            <div class="sw__bottom-wrapper js-slider js-slider-two">
+              <img class="sw__bottom-img" src="./images/png/sw21.png" width="403" height="280" alt="slider image">
+              <img class="sw__bottom-img" src="./images/png/sw22.png" width="403" height="280" alt="slider image">
+              <img class="sw__bottom-img" src="./images/png/sw23.png" width="403" height="280" alt="slider image">
+              <img class="sw__bottom-img" src="./images/png/sw24.png" width="403" height="280" alt="slider image">
+              <img class="sw__bottom-img" src="./images/png/sw25.png" width="403" height="280" alt="slider image">
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
