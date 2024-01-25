@@ -101,7 +101,7 @@
     }
 
     .site-header__list {
-        margin-top: 80px;
+        margin-top: 100px;
         @include mx.flexbox(column, center, center);
         gap: 35px;
     }
@@ -139,8 +139,8 @@
 
     .site-header__close-btn {
         position: absolute;
-        top: 20px;
-        right: 20px;
+        top: 25px;
+        right: 25px;
         background: url("../../images/svg/close.svg") no-repeat center;
         background-size: 35px;
         opacity: 0.8;
