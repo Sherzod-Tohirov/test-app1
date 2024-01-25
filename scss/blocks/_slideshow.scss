@@ -1,0 +1,96 @@
+@use "../mixins" as mx;
+
+@media only screen and (max-width: 375px) {
+
+}
+
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+    
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    
+}
+
+@media only screen {
+    .slideshow {
+        padding-bottom: 244px;
+    }
+    .slideshow__wrapper {
+        @include mx.flexbox(column, center, center);
+        gap: 20px;
+        overflow-x: hidden;
+    }
+
+    .sw__top {
+        position: relative;
+        left: calc(50% - 900px);
+        align-self: flex-start;
+        display: inline-block;
+        white-space: nowrap;
+        gap: 20px;
+
+        &:hover .sw__top-wrapper {
+            animation-play-state: paused;
+        }
+    }
+
+    .sw__bottom {
+        position: relative;
+        left: 0;
+        @include mx.flexbox(row, center, center);
+        gap: 20px;
+
+        &:hover .sw__bottom-wrapper {
+            animation-play-state: paused;
+        }
+    }
+
+    .sw__top-wrapper {
+        display: inline-block;
+        white-space: nowrap;
+        gap: 20px;
+        animation: slide-to-left 40s linear infinite;
+
+       
+    }
+
+
+    .sw__top-img {
+        display: inline-block;
+        margin-right: 20px;
+        object-fit: cover;
+    }
+
+    .sw__bottom-img {
+        display: inline-block;
+        margin-right: 20px;
+        object-fit: cover;
+    }
+
+
+
+    .sw__bottom-wrapper {
+        display: inline-block;
+        white-space: nowrap;
+        animation: slide-to-right 40s linear infinite;
+    }
+
+    @keyframes slide-to-left {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-100%);
+        }
+    }
+
+    @keyframes slide-to-right {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(100%);
+        }
+    }
+}

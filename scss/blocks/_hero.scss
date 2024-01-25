@@ -1,0 +1,33 @@
+@use "../mixins" as mx;
+
+@media only screen and (max-width: 375px) {
+
+}
+
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+    
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    
+}
+
+@media only screen {
+    .hero {
+        position: relative;
+        padding-top: 181px;
+        padding-bottom: 267px;
+        background: linear-gradient(123deg, #df5017 4.42%, rgba(223, 80, 23, 0.44) 22.08%, rgba(223, 80, 23, 0.19) 35.36%, rgba(223, 80, 23, 0.00) 52.74%), linear-gradient(90deg, #282533 65.15%, #282533 65.15%, rgba(40, 37, 51, 0.74) 82.21%, rgba(40, 37, 51, 0.00) 99.99%) no-repeat left -450px center;
+    }
+
+    .hero__title-wrapper {
+        max-width: 820px;
+        width: 100%;
+    }
+
+    .hero__title {
+        @include mx.remove-margin; 
+        @include mx.typography(inherit, 400, 50px, 120%, start, var(--main-txt-color));
+        text-transform: uppercase;
+    }
+}

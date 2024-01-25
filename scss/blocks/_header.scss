@@ -1,0 +1,76 @@
+@use "../mixins" as mx;
+
+@media only screen and (max-width: 375px) {
+
+}
+
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+    
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    
+}
+
+@media only screen {
+    .site-header {
+        padding-top: 15px;
+        padding-bottom: 16px;
+        background-image: linear-gradient(90deg, #9e0b37 0.98%, #ffc531 72.22%, #9e0b37 99.95%);
+    }
+
+    .site-header__wrapper {
+        @include mx.flexbox(row, center, space-between);
+    }
+
+    .site-header__list {
+        @include mx.list-unstyled;
+        @include mx.flexbox(row, center, center); 
+        gap: 72px;
+    }
+
+    .site-header__link {
+        @include mx.flexbox(row, center, center);
+        gap: 12px; 
+        @include mx.typography(Abel, 400, 16px, normal, center, var(--main-txt-color));
+        text-decoration: none;
+    }
+
+    .active {
+        font-family: "Gotham Pro";
+    }
+
+    .active::after {
+        content: '';
+        @include mx.flexbox(row, center, center); 
+        width: 5px;
+        height: 12px;
+        background: url("../../images/svg/rtarr.svg") no-repeat center;
+    }
+
+    .site-header__btn-group {
+        @include mx.flexbox(row, center, center);
+        gap: 42px;
+    }
+
+    .site-header__btn {
+        @include mx.typography(inherit, 400, 16px, normal, center, var(--main-txt-color));
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.2s ease; 
+
+        &:active {
+            transform: scale(0.95);
+        }
+    }
+
+    .sign-up-btn {
+        min-width: 160px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        border-radius: 40px;
+        background-color: rgba(158, 11, 55, 0.70);
+        box-shadow: 4px 4px 6px 0px rgba(255, 255, 255, 0.50) inset, 4px 4px 20px 0px rgba(223, 80, 23, 0.80);
+    }
+}

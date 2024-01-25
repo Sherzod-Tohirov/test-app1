@@ -1,0 +1,36 @@
+
+/*Main font families */
+
+@font-face {
+    font-family: "Gotham Pro"; 
+    font-weight: 400;
+    font-display: swap;
+    src: url("../fonts/gothampro/regular.woff") format("woff2"),
+         url("../fonts/gothampro/regular.woff2") format("woff");
+}
+
+@font-face {
+    font-family: "Gotham Pro"; 
+    font-weight: 500;
+    font-display: swap;
+    src: url("../fonts/gothampro/medium.woff") format("woff2"),
+         url("../fonts/gothampro/medium.woff2") format("woff");
+}
+
+@font-face {
+    font-family: "Gotham Pro"; 
+    font-weight: 700;
+    font-display: swap;
+    src: url("../fonts/gothampro/bold.woff") format("woff2"),
+         url("../fonts/gothampro/bold.woff2") format("woff");
+}
+
+@font-face {
+    font-family: Abel; 
+    font-weight: 400;
+    font-display: swap;
+    src: url("../fonts/abel/regular.woff") format("woff2"),
+         url("../fonts/abel/regular.woff2") format("woff");
+}
+
+
