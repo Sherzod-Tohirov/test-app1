@@ -395,7 +395,7 @@ img {
 }
 @media only screen and (min-width: 2400px) {
   .primary {
-    background: url("../../images/png/herobg.png") no-repeat 105% bottom;
+    background: url("../../images/png/herobg.png") no-repeat calc(50% + 750px) bottom;
   }
 }
 /*Visually hidden class */
